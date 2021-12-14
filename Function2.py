@@ -68,3 +68,16 @@ print( union("HAM", "SPAM"))
 print( union("HAM", "SPAM", "EGG"))
 
 
+
+# undefined arguments
+def userURIBuilder(server, port, **user):
+    strURL = "http://" + server + ":" + port + "/?"
+    for key in user.keys():
+        strURL += key + "=" + user[key] + "&"
+    return strURL
+
+# calling
+print(userURIBuilder("credu.com", "80", id="kim", name="mike"))
+print(userURIBuilder("credu.com", "80", id="kim", name="mike", 
+    age = "30"))
+
