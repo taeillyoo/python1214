@@ -22,5 +22,5 @@ print(account1)
 
 # print(account1.__balance) # error
 # 백도어(테스트용)
-account1._BankAccount__balance = 1500000000000
+# account1._BankAccount__balance = 1500000000000
 print(account1._BankAccount__balance)
