@@ -1,4 +1,4 @@
-q#ProductList.py(로직단) + ProductList.ui(화면단)
+#ProductList.py(로직단) + ProductList.ui(화면단)
 
 import sys
 from PyQt5.QtWidgets import *
